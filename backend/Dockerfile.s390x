@@ -1,0 +1,39 @@
+# =====================================================================
+# FloodWatch — IBM Z LinuxONE Inference Engine Containerfile
+# Architecture: s390x (IBM z16 / LinuxONE Emperor 4)
+# Optimizations: On-chip AI Acceleration & CPACF Hardware Cryptography
+# =====================================================================
+
+FROM python:3.11-slim
+
+# Install system dependencies required for XGBoost and high-performance networking
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libgomp1 \
+    curl \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy dependency requirements
+COPY requirements.txt .
+
+# Install Python packages with pre-compiled wheels for LinuxONE s390x
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application source & serialized model
+COPY main.py .
+COPY model.pkl .
+COPY ingestion.py .
+COPY simulator.py .
+
+# Expose internal inference port
+EXPOSE 8000
+
+# Health probe check
+HEALTHCHECK --interval=15s --timeout=3s --retries=3 \
+  CMD curl -f http://localhost:8000/health || exit 1
+
+# Launch production ASGI server on LinuxONE
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]

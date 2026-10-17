@@ -1,0 +1,54 @@
+# ==============================================================================
+# FloodWatch Monorepo Root .gitattributes
+# Ensure consistent cross-platform line endings and binary safety
+# ==============================================================================
+
+# Auto detect text files and perform LF normalization on checkout
+* text=auto eol=lf
+
+# Explicit Source Code (LF normalized for Linux/Docker/IBM Z compatibility)
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.csv text eol=lf
+Dockerfile* text eol=lf
+
+# Shell scripts MUST have LF line endings to execute inside Linux containers
+*.sh text eol=lf
+
+# Windows batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary Files - Prevent Git from corrupting bytecode and media
+*.pkl binary
+*.joblib binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.tar.gz binary
+*.zip binary
+
+# Graphify merge driver (if enabled)
+graphify-out/graph.json merge=graphify

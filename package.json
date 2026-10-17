@@ -1,0 +1,10 @@
+{
+  "name": "floodwatch-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev:backend --prefix frontend",
+    "dev:all": "npm run dev:all --prefix frontend"
+  }
+}

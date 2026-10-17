@@ -1,0 +1,265 @@
+{
+  "zones_meta": {
+    "7f8b9c1d-1111-4444-8888-abcdef000001": {
+      "name": "Kolkata North",
+      "district": "Kolkata",
+      "state": "West Bengal",
+      "river_basin": "Hooghly / Ganga Delta",
+      "population": "142,500 residents",
+      "coordinator": {
+        "name": "S. K. Mukherjee, IAS",
+        "title": "District Disaster Incident Commander",
+        "phone": "+91 33 2214-5555"
+      }
+    },
+    "7f8b9c1d-2222-4444-8888-abcdef000002": {
+      "name": "Guwahati Riverfront",
+      "district": "Kamrup Metropolitan",
+      "state": "Assam",
+      "river_basin": "Brahmaputra Valley",
+      "population": "96,000 residents",
+      "coordinator": {
+        "name": "D. H. Saikia, ACS",
+        "title": "State Disaster Response Liaison",
+        "phone": "+91 361 223-7000"
+      }
+    },
+    "7f8b9c1d-3333-4444-8888-abcdef000003": {
+      "name": "Patna Ganga Basin",
+      "district": "Patna",
+      "state": "Bihar",
+      "river_basin": "Middle Ganga Plains",
+      "population": "115,000 residents",
+      "coordinator": {
+        "name": "R. K. Verma, IAS",
+        "title": "Regional Mitigation Director",
+        "phone": "+91 612 221-5000"
+      }
+    },
+    "7f8b9c1d-4444-4444-8888-abcdef000004": {
+      "name": "Cuttack Mahanadi",
+      "district": "Cuttack",
+      "state": "Odisha",
+      "river_basin": "Mahanadi Delta",
+      "population": "78,000 residents",
+      "coordinator": {
+        "name": "P. K. Mohapatra, OAS",
+        "title": "Coastal Hazard Response Chief",
+        "phone": "+91 671 250-8000"
+      }
+    },
+    "7f8b9c1d-5555-4444-8888-abcdef000005": {
+      "name": "Mumbai Mithi River",
+      "district": "Mumbai Suburban",
+      "state": "Maharashtra",
+      "river_basin": "Mithi Catchment",
+      "population": "185,000 residents",
+      "coordinator": {
+        "name": "A. S. Chahal, IAS",
+        "title": "Municipal Disaster Operations Head",
+        "phone": "+91 22 2262-0200"
+      }
+    }
+  },
+  "orders": {},
+  "shelters": {
+    "7f8b9c1d-1111-4444-8888-abcdef000001": [
+      {
+        "id": "sh-kol-1",
+        "name": "Salt Lake Central Indoor Stadium",
+        "capacity": "3,500 evacuees",
+        "occupancy": 3500,
+        "status": "Filling",
+        "address": "Sector III, Bidhannagar, Kolkata"
+      },
+      {
+        "id": "sh-kol-2",
+        "name": "North 24 Parganas District College",
+        "capacity": "2,200 evacuees",
+        "occupancy": 180,
+        "status": "Filling",
+        "address": "Jessore Road, Kolkata"
+      },
+      {
+        "id": "sh-kol-3",
+        "name": "Bagbazar Multi-Purpose Relief Shelter",
+        "capacity": "1,800 evacuees",
+        "occupancy": 1450,
+        "status": "Filling",
+        "address": "Bagbazar Circular Road, Kolkata"
+      }
+    ],
+    "7f8b9c1d-2222-4444-8888-abcdef000002": [
+      {
+        "id": "sh-guw-1",
+        "name": "Sarusajai Stadium Evacuation Hub",
+        "capacity": "4,000 evacuees",
+        "occupancy": 600,
+        "status": "Open",
+        "address": "Lokhra Road, Guwahati"
+      },
+      {
+        "id": "sh-guw-2",
+        "name": "Kamrup Metro Disaster Transit Center",
+        "capacity": "2,000 evacuees",
+        "occupancy": 310,
+        "status": "Open",
+        "address": "Panbazar, Guwahati"
+      }
+    ],
+    "7f8b9c1d-3333-4444-8888-abcdef000003": [
+      {
+        "id": "sh-pat-1",
+        "name": "Patliputra Sports Complex Shelter",
+        "capacity": "3,000 evacuees",
+        "occupancy": 450,
+        "status": "Open",
+        "address": "Kankarbagh, Patna"
+      },
+      {
+        "id": "sh-pat-2",
+        "name": "Danapur Multi-Purpose Relief Hall",
+        "capacity": "1,800 evacuees",
+        "occupancy": 200,
+        "status": "Open",
+        "address": "Danapur Cantonment, Patna"
+      }
+    ],
+    "7f8b9c1d-4444-4444-8888-abcdef000004": [
+      {
+        "id": "sh-cut-1",
+        "name": "Barabati Indoor Relief Center",
+        "capacity": "2,800 evacuees",
+        "occupancy": 350,
+        "status": "Open",
+        "address": "Stadium Road, Cuttack"
+      },
+      {
+        "id": "sh-cut-2",
+        "name": "Mahanadi Barrage Emergency Camp",
+        "capacity": "1,600 evacuees",
+        "occupancy": 120,
+        "status": "Open",
+        "address": "Jobra, Cuttack"
+      }
+    ],
+    "7f8b9c1d-5555-4444-8888-abcdef000005": [
+      {
+        "id": "sh-mum-1",
+        "name": "Bandra Kurla Complex Transit Hub",
+        "capacity": "5,000 evacuees",
+        "occupancy": 850,
+        "status": "Open",
+        "address": "BKC MMRDA Ground, Mumbai"
+      },
+      {
+        "id": "sh-mum-2",
+        "name": "Kurla Municipal High School Shelter",
+        "capacity": "2,000 evacuees",
+        "occupancy": 400,
+        "status": "Open",
+        "address": "LBS Marg, Kurla West, Mumbai"
+      }
+    ]
+  },
+  "routes": {
+    "7f8b9c1d-1111-4444-8888-abcdef000001": [
+      {
+        "id": "rt-kol-1",
+        "name": "VIP Road Arterial Highway",
+        "status": "Clear",
+        "eta": "15 min"
+      },
+      {
+        "id": "rt-kol-2",
+        "name": "Belghoria Elevated Expressway",
+        "status": "Clear",
+        "eta": "15 min"
+      },
+      {
+        "id": "rt-kol-3",
+        "name": "Strand Road Riverfront Access",
+        "status": "Clear",
+        "eta": "15 min"
+      }
+    ],
+    "7f8b9c1d-2222-4444-8888-abcdef000002": [
+      {
+        "id": "rt-guw-1",
+        "name": "GS Road Elevated Corridor",
+        "status": "Clear",
+        "eta": "10 min"
+      },
+      {
+        "id": "rt-guw-2",
+        "name": "Brahmaputra Embankment Road",
+        "status": "Flooded",
+        "eta": "CLOSED"
+      }
+    ],
+    "7f8b9c1d-3333-4444-8888-abcdef000003": [
+      {
+        "id": "rt-pat-1",
+        "name": "Bailey Road Flyover Corridor",
+        "status": "Clear",
+        "eta": "14 min"
+      },
+      {
+        "id": "rt-pat-2",
+        "name": "Ganga Pathway Ring Route",
+        "status": "Restricted",
+        "eta": "25 min"
+      }
+    ],
+    "7f8b9c1d-4444-4444-8888-abcdef000004": [
+      {
+        "id": "rt-cut-1",
+        "name": "NH-16 Bhubaneswar Expressway",
+        "status": "Clear",
+        "eta": "18 min"
+      },
+      {
+        "id": "rt-cut-2",
+        "name": "Ring Road Embankment Route",
+        "status": "Restricted",
+        "eta": "22 min"
+      }
+    ],
+    "7f8b9c1d-5555-4444-8888-abcdef000005": [
+      {
+        "id": "rt-mum-1",
+        "name": "Western Express Highway Elevated",
+        "status": "Clear",
+        "eta": "15 min"
+      },
+      {
+        "id": "rt-mum-2",
+        "name": "SCLR East-West Corridor",
+        "status": "Clear",
+        "eta": "12 min"
+      },
+      {
+        "id": "rt-mum-3",
+        "name": "Mithi River Low-Level Service Lane",
+        "status": "Flooded",
+        "eta": "CLOSED"
+      }
+    ]
+  },
+  "broadcasts": [
+    {
+      "id": "04d3b08c-0463-4a95-b5ce-41ff67e627df",
+      "zone_id": "7f8b9c1d-1111-4444-8888-abcdef000001",
+      "message": "Test citizen evacuation alert",
+      "channel": "Cell Broadcast CAP",
+      "timestamp": "2026-10-17T04:56:40.279404+00:00"
+    },
+    {
+      "id": "e7153a18-9887-420e-85d8-31701844bba4",
+      "zone_id": "7f8b9c1d-1111-4444-8888-abcdef000001",
+      "message": "EMERGENCY EVACUATION ALERT: Rapid flood inundation forecast for Kolkata North. Move immediately to designated high-ground shelters via clear arterial routes. Follow disaster response instructions.",
+      "channel": "Cell Broadcast CAP & Disaster SMS Gateway",
+      "timestamp": "2026-10-17T05:02:44.232777+00:00"
+    }
+  ]
+}
